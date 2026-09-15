@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>TNZ ENGINEERING SERVICES</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!--!--Icon-->
+  <!--https://icons8.com/icons/set/website--white-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<!-- Custom Styles for Zeochem Product / Partnership Page -->
+<style>
+  .zeo_commercial_wrapper {
+    background: #f4f6f9;
+    padding: 60px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #334155;
+  }
+
+  /* Interactive Hero Banner */
+  .zeo_hero_box {
+    background: linear-gradient(135deg, #002244 0%, #003366 60%, #004080 100%);
+    border-radius: 20px;
+    padding: 50px 40px;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 51, 102, 0.15);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .zeo_hero_box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(0, 176, 80, 0.25) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+  }
+
+  .zeo_badge_auth {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 176, 80, 0.15);
+    border: 1px solid #00B050;
+    color: #00E676;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .zeo_logo_card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .zeo_logo_card:hover {
+    transform: scale(1.03);
+  }
+
+  .zeo_logo_card h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #003366;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  /* Interactive Cards */
+  .interactive_card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px;
+    height: 100%;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .interactive_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 51, 102, 0.1);
+    border-color: #cbd5e1;
+  }
+
+  .section_heading {
+    color: #003366;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .heading_icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 176, 80, 0.1);
+    color: #00B050;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  /* Pill Grid Visual for Products & Applications */
+  .feature_pill_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .feature_pill {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #334155;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .feature_pill:hover {
+    background: #003366;
+    color: #ffffff;
+    border-color: #003366;
+    transform: translateY(-2px);
+  }
+
+  .feature_pill:hover i {
+    color: #00B050;
+  }
+
+  /* Step-by-Step Accordion-Style Cards */
+  .step_card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #003366;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .step_card:hover {
+    border-left-color: #00B050;
+    background: #f8fafc;
+    transform: translateX(6px);
+  }
+
+  /* Commercial Advantage Box */
+  .advantage_card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .advantage_card:hover {
+    border-color: #00B050;
+    box-shadow: 0 10px 25px rgba(0, 176, 80, 0.1);
+    transform: translateY(-4px);
+  }
+
+  /* Commercial CTA Banner */
+  .cta_banner {
+    background: linear-gradient(90deg, #003366 0%, #004080 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 51, 102, 0.15);
+  }
+
+  .btn_cta_primary {
+    background: #00B050;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 176, 80, 0.3);
+  }
+
+  .btn_cta_primary:hover {
+    background: #009644;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 176, 80, 0.4);
+    text-decoration: none;
+  }
+
+  .client-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* Ubah nilai untuk besarkan/kecilkan jarak */
+}
+
+.client-badges .badge {
+  border-radius: 6px;
+}
+
+</style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+     <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+             <!-- Container Utama (Guna Flexbox) -->
+        <div style="display: flex; align-items: center; background-color: #003366; padding: 10px;">
+          <!-- 1. Logo kat sebelah kiri -->
+            <img src="images/TNZLogo.png" alt="TNZ Logo" style="height: 60px; margin-right: 15px;">
+         <!-- 2. Teks kat sebelah kanan -->
+         <div style="display: flex; flex-direction: column;">
+           <span style="color: white; font-weight: bold; font-size: 20px; line-height: 1.2;">
+             TNZ ENGINEERING
+           </span>
+           <span style="color: #00B050; font-weight: bold; font-size: 18px; line-height: 1.2;">
+             SERVICES SDN BHD
+           </span>
+            </div>
+            </div>
+          <div class="contact_nav">
+           
+            <a >
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                603-8922 1151
+              </span>
+            </a>
+            <a >
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                sales@tnz.com.my
+              </span>
+            </a>
+			<a href="">
+              <i class="fa fa-chrome" aria-hidden="true"></i>
+              <span>
+                 tnz.com.my
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/tnzengineeringservices/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/explore/locations/752944271532510/tnz-engineering-services-sdn-bhd/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand navbar_brand_mobile" href="index.html"> 
+              <img src="images\TNZLogo.png" style="width:80px; height:40px;">TNZ ENGINEERING<span> SERVICES</span>
+             </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Gallery</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="TNZ&ZEOCHEM.html">ZEOCHEM.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+               
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+<!-- Main Commercial Section Content -->
+<section class="zeo_commercial_wrapper" style="padding-top: 60px; padding-bottom: 60px;">
+  <div class="container">
+
+    <!-- Interactive Hero Banner -->
+    <div class="zeo_hero_box">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="zeo_badge_auth">
+            <i class="fa fa-shield-halved"></i> Official Partnership
+          </div>
+          <h1 style="font-weight: 800; font-size: 36px; margin-bottom: 15px;">Authorized Distributor of ZEOCHEM&reg;</h1>
+          <p style="color: #cbd5e1; font-size: 16px; line-height: 1.7; margin-bottom: 25px;">
+            <strong>TNZ Engineering Services Sdn. Bhd.</strong> is an Authorized Reseller and Distributor of ZEOCHEM Activated Alumina and Molecular Sieve products in Malaysia. We are officially authorized by <strong>Zeochem Pte. Ltd.</strong> to supply high-grade adsorbent products to industry leaders including:
+          </p>
+          
+          <!-- Key Clients Badges -->
+                    <div class="client-badges mb-3">
+            <span class="badge bg-light text-dark p-2 px-3">
+                <i class="fa fa-building text-success me-1"></i>
+                PETRONAS Chemicals Group
+            </span>
+
+            <span class="badge bg-light text-dark p-2 px-3">
+                <i class="fa fa-building text-success me-1"></i>
+                PETRONAS Gas Berhad
+            </span>
+
+            <span class="badge bg-light text-dark p-2 px-3">
+                <i class="fa fa-building text-success me-1"></i>
+                Malaysia LNG
+            </span>
+
+            <span class="badge bg-light text-dark p-2 px-3">
+                <i class="fa fa-building text-success me-1"></i>
+                Pengerang Integrated Complex
+            </span>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 text-center mt-4 mt-lg-0">
+          <div class="zeo_logo_card">
+            <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 11px; font-weight: 700; color: #64748b; margin-bottom: 5px;">Global Partner</p>
+            <h2>ZEOCHEM<span style="color: #00B050;">.</span></h2>
+            <p style="font-size: 12px; color: #003366; font-weight: 600; margin-top: 5px; margin-bottom: 0;">Swiss Adsorbent Technology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Zeochem Section -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="interactive_card">
+          <div class="section_heading">
+            <div class="heading_icon"><i class="fa fa-globe"></i></div>
+            <span>About ZEOCHEM</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.8; color: #475569; margin: 0;">
+            ZEOCHEM, a company of <strong>CPH Chemie & Papier Holding AG</strong>, is a global Swiss-based manufacturer specializing in high-performance molecular sieves and adsorbents tailored for the gas, LNG, petrochemical, and industrial sectors. With decades of manufacturing expertise, ZEOCHEM delivers reliable solutions that satisfy demanding process requirements worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Products & Applications Grid -->
+    <div class="row mb-4">
+      <!-- Products Column -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="interactive_card">
+          <div class="section_heading">
+            <div class="heading_icon"><i class="fa fa-cubes"></i></div>
+            <span>Featured Products</span>
+          </div>
+          <p style="font-size: 13px; color: #64748b; margin-bottom: 20px;">High-purity molecular sieves & adsorbents engineered for extreme applications:</p>
+          <div class="feature_pill_grid">
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Activated Alumina</div>
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Molecular Sieve 3A</div>
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Molecular Sieve 4A</div>
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Molecular Sieve 5A</div>
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Molecular Sieve 13X</div>
+            <div class="feature_pill"><i class="fa fa-check-circle"></i> Specialty Molecular Sieves</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications Column -->
+      <div class="col-lg-6">
+        <div class="interactive_card">
+          <div class="section_heading">
+            <div class="heading_icon"><i class="fa fa-industry"></i></div>
+            <span>Industrial Applications</span>
+          </div>
+          <p style="font-size: 13px; color: #64748b; margin-bottom: 20px;">ZEOCHEM adsorbent products are widely deployed across critical sectors:</p>
+          <div class="feature_pill_grid">
+            <div class="feature_pill"><i class="fa fa-gear"></i> Natural Gas Processing</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> LNG Plants</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> Petrochemical Facilities</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> Air Separation Units (ASU)</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> PSA / VPSA Systems</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> Gas Drying & Purification</div>
+            <div class="feature_pill"><i class="fa fa-gear"></i> Hydrocarbon Processing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How TNZ Supports Customers -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="interactive_card">
+          <div class="section_heading">
+            <div class="heading_icon"><i class="fa fa-handshake"></i></div>
+            <span>How TNZ Supports Your Operations</span>
+          </div>
+          <p style="font-size: 14px; color: #64748b; margin-bottom: 25px;">As an authorized reseller, TNZ connects customers with genuine ZEOCHEM products through end-to-end support:</p>
+
+          <div class="step_card">
+            <div class="d-flex align-items-center mb-1">
+              <span style="color: #00B050; font-weight: 700; margin-right: 10px;">01.</span>
+              <h5 style="margin: 0; font-size: 16px; font-weight: 700; color: #003366;">Reliable Supply Chain</h5>
+            </div>
+            <p style="margin: 0; font-size: 14px; color: #64748b; padding-left: 32px;">Facilitating product supply and coordination directly with ZEOCHEM to guarantee reliable delivery and uninterrupted operational continuity.</p>
+          </div>
+
+          <div class="step_card">
+            <div class="d-flex align-items-center mb-1">
+              <span style="color: #00B050; font-weight: 700; margin-right: 10px;">02.</span>
+              <h5 style="margin: 0; font-size: 16px; font-weight: 700; color: #003366;">Technical Support & Product Selection</h5>
+            </div>
+            <p style="margin: 0; font-size: 14px; color: #64748b; padding-left: 32px;">Working closely with ZEOCHEM technical specialists to recommend suitable adsorbent solutions tailored to your process requirements.</p>
+          </div>
+
+          <div class="step_card" style="margin-bottom: 0;">
+            <div class="d-flex align-items-center mb-1">
+              <span style="color: #00B050; font-weight: 700; margin-right: 10px;">03.</span>
+              <h5 style="margin: 0; font-size: 16px; font-weight: 700; color: #003366;">Industry Knowledge & Engineering Support</h5>
+            </div>
+            <p style="margin: 0; font-size: 14px; color: #64748b; padding-left: 32px;">Combining engineering experience and technical understanding to support customers in achieving reliable, efficient plant operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Advantages Grid -->
+    <div class="row mb-5">
+      <div class="col-12 mb-3">
+        <h3 style="color: #003366; font-weight: 700; font-size: 24px;">Key Advantages</h3>
+      </div>
+      
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="advantage_card">
+          <div style="width: 42px; height: 42px; background: rgba(0, 176, 80, 0.1); color: #00B050; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 15px;">
+            <i class="fa fa-microchip"></i>
+          </div>
+          <h5 style="color: #003366; font-weight: 700; font-size: 16px; margin-bottom: 8px;">Global Technology</h5>
+          <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 0;">Direct access to ZEOCHEM's proven molecular sieve and activated alumina technology.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="advantage_card">
+          <div style="width: 42px; height: 42px; background: rgba(0, 176, 80, 0.1); color: #00B050; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 15px;">
+            <i class="fa fa-truck-fast"></i>
+          </div>
+          <h5 style="color: #003366; font-weight: 700; font-size: 16px; margin-bottom: 8px;">Reliable Supply</h5>
+          <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 0;">Strong coordination between TNZ and ZEOCHEM to support urgent requirements.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="advantage_card">
+          <div style="width: 42px; height: 42px; background: rgba(0, 176, 80, 0.1); color: #00B050; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 15px;">
+            <i class="fa fa-users-gear"></i>
+          </div>
+          <h5 style="color: #003366; font-weight: 700; font-size: 16px; margin-bottom: 8px;">Technical Advice</h5>
+          <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 0;">Dedicated support from experienced engineering teams for product selection.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="advantage_card">
+          <div style="width: 42px; height: 42px; background: rgba(0, 176, 80, 0.1); color: #00B050; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 15px;">
+            <i class="fa fa-award"></i>
+          </div>
+          <h5 style="color: #003366; font-weight: 700; font-size: 16px; margin-bottom: 8px;">Quality Assurance</h5>
+          <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 0;">High-performance adsorbent solutions engineered for demanding applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Commercial CTA Banner -->
+    <div class="cta_banner text-center">
+      <h3 style="font-weight: 700; font-size: 26px; margin-bottom: 10px;">Need ZEOCHEM Adsorbent Solutions for Your Plant?</h3>
+      <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 25px auto; font-size: 15px;">Get in touch with our engineering team for technical datasheets, inquiries, or pricing.</p>
+      <a href="/contact" class="btn_cta_primary">
+        <i class="fa fa-paper-plane me-2"></i> Request Consultation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+ <!-- Info Footer Section -->
+  <footer class="info_section">
+    <div class="container py-5">
+      <!-- Top Branding Header -->
+      <div class="row pb-4 mb-4 align-items-center border-bottom border-secondary">
+        <div class="col-md-6">
+          <a class="footer-brand" href="index.html">
+            TNZ <span>Engineering Services</span>
+          </a>
+        </div>
+        <div class="col-md-6 text-md-right mt-3 mt-md-0">
+          <a href="https://wa.me/+60133042070" target="_blank" class="btn btn-outline-light rounded-pill px-4">
+            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="row">
+        <!-- Col 1: Useful Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href="PAGEabout.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+            <li><a href="PAGEservices.html"><i class="fa fa-angle-right"></i> Services</a></li>
+            <li><a href="PAGEportfolio.html"><i class="fa fa-angle-right"></i> Portfolio</a></li>
+            <li><a href="PHPcontact.php"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Services Brief -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Our Service</h5>
+          <p class="footer-text">
+            Specialized solutions to ensure the safe, precise, and efficient delivery of high-purity gases essential for scientific experiments and industrial processes.
+          </p>
+        </div>
+
+        <!-- Col 3: Address -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Address</h5>
+          <p class="footer-text">
+            <strong>TNZ Engineering Services Sdn. Bhd.</strong><br>
+            No. 4, Jalan ST/1,<br>
+            Taman Industri Sungai Tangkas,<br>
+            43000 Kajang, Selangor.
+          </p>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact list-unstyled">
+            <li>
+              <i class="fa fa-globe"></i>
+              <a href="https://tnz.com.my" target="_blank">tnz.com.my</a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <a href="tel:+60389221151">603-8922 1151</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:sales@tnz.com.my">sales@tnz.com.my</a>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <a href="https://www.google.com/maps/place/TNZ+Engineering+Services+Sdn.+Bhd./@2.9458429,101.7835392,17z/data=!3m1!4b1!4m6!3m5!1s0x31cdc95a83aed0f3:0x9f319731a90759a1!8m2!3d2.9458429!4d101.7861141!16s%2Fg%2F11c1wvsh93?entry=ttu" target="_blank">Locate Our Centre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section -->
+  <footer class="footer-bottom text-center py-3">
+    <div class="container">
+      <p class="m-0 small">
+        &copy; <span id="displayYear"></span> TNZ Engineering Services Sdn.Bhd. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>

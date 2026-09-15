@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Services | TNZ Engineering Services Sdn. Bhd.</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Owl Slider & Nice Select -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --tnz-blue: #003366;
+      --tnz-green: #00B050;
+      --tnz-light-bg: #f8f9fa;
+      --tnz-dark-text: #2c3e50;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--tnz-dark-text);
+    }
+
+    /* Top Info Bar */
+    .header_top_bar {
+      background-color: var(--tnz-blue);
+      padding: 10px 0;
+      color: #fff;
+    }
+    .header_top_bar a {
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .header_top_bar a:hover {
+      color: var(--tnz-green);
+    }
+    .brand-title {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+    .brand-subtitle {
+      color: var(--tnz-green);
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    /* Navigation Bar */
+    .custom_nav-container {
+      background: #ffffff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 12px 20px;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+      padding: 10px 18px !important;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-link:hover {
+      color: var(--tnz-green) !important;
+    }
+    .btn-quote {
+      background-color: var(--tnz-green);
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 8px 24px !important;
+      box-shadow: 0 4px 10px rgba(0, 176, 80, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-quote:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 176, 80, 0.4);
+      background-color: #009644;
+    }
+
+    /* Page Hero / Heading */
+    .page-header-banner {
+      background: linear-gradient(135deg, var(--tnz-blue) 0%, #001f3f 100%);
+      color: white;
+      padding: 50px 0 40px;
+      text-center;
+      position: relative;
+    }
+    .page-header-banner h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .page-header-banner span {
+      color: var(--tnz-green);
+    }
+
+    /* Services Section */
+    .service_section {
+      background-color: var(--tnz-light-bg);
+      padding: 70px 0;
+    }
+    .service-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+    .service-card-link:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+    .service-card {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #eef2f5;
+      padding: 35px 25px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--tnz-green);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 51, 102, 0.1);
+    }
+    .service-card:hover::before {
+      opacity: 1;
+    }
+    .service-icon-box {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(0, 176, 80, 0.08);
+      transition: background 0.3s ease;
+    }
+    .service-card:hover .service-icon-box {
+      background: rgba(0, 51, 102, 0.08);
+    }
+    .service-card h5 {
+      font-weight: 600;
+      color: var(--tnz-blue);
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .service-card p {
+      color: #666;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      text-align: justify;
+      flex-grow: 1;
+    }
+    .service-learn-more {
+      color: var(--tnz-green);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.2s ease;
+    }
+    .service-card:hover .service-learn-more {
+      gap: 12px;
+      color: var(--tnz-blue);
+    }
+
+    /* Key Trust Stats Bar */
+    .stats-bar {
+      background: var(--tnz-blue);
+      color: white;
+      padding: 40px 0;
+    }
+    .stat-item h3 {
+      font-weight: 700;
+      color: var(--tnz-green);
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+    .stat-item p {
+      font-size: 0.95rem;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('images/gallery/Pipping/pipping(1).jpeg') center/cover;
+      color: white;
+      padding: 60px 0;
+      text-center;
+    }
+    .cta-banner h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Info Section / Footer */
+    .info_section {
+      background-color: #002244;
+      color: #b0c4de;
+    }
+    .info_section .footer-title {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    .info_section .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 35px;
+      height: 3px;
+      background: var(--tnz-green);
+    }
+    .info_section a {
+      color: #b0c4de;
+      transition: color 0.2s ease;
+    }
+    .info_section a:hover {
+      color: var(--tnz-green);
+      text-decoration: none;
+    }
+    .footer-brand {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff !important;
+    }
+    .footer-brand span {
+      color: var(--tnz-green);
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <!-- TOP HEADER INFO BAR -->
+  <header class="header_top_bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Logo & Brand -->
+        <div class="col-lg-5 col-md-6 d-flex align-items-center">
+          <img src="images/TNZLogo.png" alt="TNZ Logo" style="height: 52px; margin-right: 12px;">
+          <div>
+            <div class="brand-title">TNZ ENGINEERING</div>
+            <div class="brand-subtitle">SERVICES SDN BHD</div>
+          </div>
+        </div>
+
+        <!-- Contact Info & Socials -->
+        <div class="col-lg-7 col-md-6 d-none d-md-flex justify-content-end align-items-center gap-4">
+          <div class="d-flex align-items-center mr-3">
+            <i class="fa fa-phone text-success mr-2"></i>
+            <a href="tel:+60389221151">603-8922 1151</a>
+          </div>
+          <div class="d-flex align-items-center mr-3">
+            <i class="fa fa-envelope text-success mr-2"></i>
+            <a href="mailto:sales@tnz.com.my">sales@tnz.com.my</a>
+          </div>
+          <div class="social_box d-flex gap-2">
+            <a href="https://www.facebook.com/tnzengineeringservices/" target="_blank" class="mr-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/explore/locations/752944271532510/tnz-engineering-services-sdn-bhd/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <div class="container">
+        <!-- Mobile Brand Display -->
+        <a class="navbar-brand d-lg-none d-flex align-items-center" href="index.html">
+          <img src="images/TNZLogo.png" style="height: 35px;" alt="TNZ Logo" class="mr-2">
+          <span style="font-size: 1rem; font-weight: 700; color: var(--tnz-blue);">TNZ ENGINEERING</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="fa fa-bars" style="color: var(--tnz-blue);"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="PAGEservices.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="PAGEabout.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="PAGEportfolio.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="PHPcontact.php">Contact Us</a></li>
+          </ul>
+          <a href="PHPcontact.php" class="btn btn-quote ml-lg-3 d-none d-lg-inline-block">Get a Quote</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HERO BANNER -->
+  <section class="page-header-banner">
+    <div class="container">
+      <h1>Our <span>Services</span></h1>
+      <p class="text-white-50 m-0">Specialized High-Purity Gas & Engineering Solutions</p>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="service_section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEinstall.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/pipe.gif" style="width: 60px;" alt="Special Gas Piping Installations">
+              </div>
+              <h5>Special Gas Piping Installations</h5>
+              <p>
+                Complete turnkey engineering packages—from custom design to final pressure testing, safety commissioning, and professional consulting for new laboratory constructions and industrial facilities.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEworktop.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/project.gif" style="width: 60px;" alt="Ducting Exhaust Systems">
+              </div>
+              <h5>Fume Exhaust & Ducting Systems</h5>
+              <p>
+                Engineered ducting solutions built to handle research equipment fume extraction. Designed for maximum chemical resistance, ease of operation, low maintenance, and long service life.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEdetection.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/gas.gif" style="width: 60px;" alt="Gas Detection Systems">
+              </div>
+              <h5>Gas Detection & Monitoring Systems</h5>
+              <p>
+                Precision gas sensors and alarms designed for toxic, corrosive, and flammable gases, as well as oxygen deficiency, keeping your operations fully compliant and secure.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEmaintanance.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/maintenance.gif" style="width: 60px;" alt="Special Gas Piping Maintenance">
+              </div>
+              <h5>System Maintenance & Servicing</h5>
+              <p>
+                Over 20 years of expertise providing customized preventative maintenance contracts, emergency repairs, and system audits to prevent costly downtime and ensure optimal efficiency.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEcustomCabinet.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/cabinet.gif" style="width: 60px;" alt="Custom Laboratory Benches">
+              </div>
+              <h5>Custom Lab Benches & Cabinets</h5>
+              <p>
+                High-durability laboratory furniture, acid/flammable storage cabinets, and phenolic resin worktops tailored specifically to meet modern scientific and safety standards.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STATS STRIP -->
+  <section class="stats-bar text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0 stat-item">
+          <h3>20+ Years</h3>
+          <p>Industry Leadership & Experience</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0 stat-item">
+          <h3>500+</h3>
+          <p>Successful Projects Installed</p>
+        </div>
+        <div class="col-md-4 stat-item">
+          <h3>100%</h3>
+          <p>Safety & Compliance Guaranteed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h3>Need Expert Advice on Your Next Engineering Project?</h3>
+      <p class="mb-4">Get in touch with our certified engineers to discuss custom gas system requirements and quotes.</p>
+      <a href="PHPcontact.php" class="btn btn-quote btn-lg px-5">Request a Consultation</a>
+    </div>
+  </section>
+
+  <!-- INFO FOOTER SECTION -->
+  <footer class="info_section">
+    <div class="container py-5">
+      <!-- Top Branding Line -->
+      <div class="row pb-4 mb-4 align-items-center border-bottom border-secondary">
+        <div class="col-md-6">
+          <a class="footer-brand" href="index.html">
+            TNZ <span>Engineering Services</span>
+          </a>
+        </div>
+        <div class="col-md-6 text-md-right mt-3 mt-md-0">
+          <a href="https://wa.me/+60133042070" target="_blank" class="btn btn-outline-light rounded-pill px-4">
+            <i class="fab fa-whatsapp mr-2 text-success"></i> WhatsApp Us Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html"><i class="fa fa-angle-right mr-2"></i> Home</a></li>
+            <li class="mb-2"><a href="PAGEabout.html"><i class="fa fa-angle-right mr-2"></i> About Us</a></li>
+            <li class="mb-2"><a href="PAGEservices.html"><i class="fa fa-angle-right mr-2"></i> Services</a></li>
+            <li class="mb-2"><a href="PAGEportfolio.html"><i class="fa fa-angle-right mr-2"></i> Gallery</a></li>
+            <li class="mb-2"><a href="PHPcontact.php"><i class="fa fa-angle-right mr-2"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Our Solutions</h5>
+          <p class="small text-white-50">
+            Specialized engineering solutions ensuring safe, precise, and efficient delivery of high-purity gases essential for scientific labs and industrial processes.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Headquarters</h5>
+          <p class="small text-white-50 mb-0">
+            <strong>TNZ Engineering Services Sdn. Bhd.</strong><br>
+            No. 4, Jalan ST/1,<br>
+            Taman Industri Sungai Tangkas,<br>
+            43000 Kajang, Selangor.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Direct Contact</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="fa fa-globe text-success mr-2"></i> <a href="https://tnz.com.my" target="_blank">tnz.com.my</a></li>
+            <li class="mb-2"><i class="fa fa-phone text-success mr-2"></i> <a href="tel:+60389221151">603-8922 1151</a></li>
+            <li class="mb-2"><i class="fa fa-envelope text-success mr-2"></i> <a href="mailto:sales@tnz.com.my">sales@tnz.com.my</a></li>
+            <li class="mb-2"><i class="fa fa-map-marker-alt text-success mr-2"></i> <a href="https://maps.google.com" target="_blank">Locate Our Centre</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTTOM FOOTER -->
+  <footer class="bg-dark text-white-50 text-center py-3">
+    <div class="container">
+      <p class="m-0 small">
+        &copy; <span id="displayYear"></span> TNZ Engineering Services Sdn. Bhd. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

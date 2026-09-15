@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site Metas -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>TNZ ENGINEERING SERVICES</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=League+Gothic" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous">
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet">
+  
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/66/3d/common.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/66/3d/util.js"></script>
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS khas untuk Redesign Komersial -->
+  <style>
+    .industry-redesign {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+    }
+
+    /* Sub-header Banner */
+    .industry-page-title {
+      background: linear-gradient(135deg, #003471 0%, #001f44 100%);
+      border-top: 6px solid #1AA260;
+      padding: 40px 0;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+
+    .industry-page-title h1 {
+      font-family: 'League Gothic', sans-serif;
+      letter-spacing: 1px;
+      font-size: 42px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    /* Hero Service Card */
+    .hero-service-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      padding: 40px;
+      margin-top: -30px;
+      position: relative;
+      z-index: 10;
+      border-top: 4px solid #1AA260;
+    }
+
+    .badge-tag {
+      background-color: rgba(26, 162, 96, 0.1);
+      color: #1AA260;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      display: inline-block;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .section-heading-custom {
+      color: #003471;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .lead-text {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #475569;
+      text-align: justify;
+    }
+
+    /* Commercial Feature Cards */
+    .feature-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 35px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e2e8f0;
+      height: 100%;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      border-color: #1AA260;
+    }
+
+    .feature-icon-wrapper {
+      width: 65px;
+      height: 65px;
+      background: rgba(0, 52, 113, 0.08);
+      color: #003471;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover .feature-icon-wrapper {
+      background: #1AA260;
+      color: #ffffff;
+    }
+
+    /* Solution Box Section */
+    .solution-section {
+      background: linear-gradient(135deg, #003471 0%, #00224d 100%);
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 50px 40px;
+      margin: 50px 0;
+      box-shadow: 0 15px 35px rgba(0, 52, 113, 0.2);
+    }
+
+    .img-frame {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border: 4px solid #ffffff;
+    }
+
+    .img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      border-left: 6px solid #1AA260;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .btn-custom-action {
+      background-color: #1AA260;
+      color: #ffffff !important;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      text-decoration: none !important;
+      border: none;
+    }
+
+    .btn-custom-action:hover {
+      background-color: #15804c;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(26, 162, 96, 0.4);
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+            <!-- Container Utama (Guna Flexbox) -->
+        <div style="display: flex; align-items: center; background-color: #003366; padding: 10px;">
+          <!-- 1. Logo kat sebelah kiri -->
+            <img src="images/TNZLogo.png" alt="TNZ Logo" style="height: 60px; margin-right: 15px;">
+          <!-- 2. Teks kat sebelah kanan -->
+          <div style="display: flex; flex-direction: column;">
+            <span style="color: white; font-weight: bold; font-size: 20px; line-height: 1.2;">
+              TNZ ENGINEERING
+            </span>
+            <span style="color: #00B050; font-weight: bold; font-size: 18px; line-height: 1.2;">
+              SERVICES SDN BHD
+            </span>
+          </div>
+        </div> 
+        <div class="contact_nav">
+            <a>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                603-8922 1151
+              </span>
+            </a>
+            <a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                sales@tnz.com.my
+              </span>
+            </a>
+            <a href="https://www.tnz.com.my/" target="_blank">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <span>www.tnz.com.my</span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/tnzengineeringservices/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/explore/locations/752944271532510/tnz-engineering-services-sdn-bhd/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <div class="mobile">
+              <a class="navbar-brand navbar_brand_mobile" href="index.html">
+                <img src="images\TNZLogo.png"><div class="name">TNZ ENGINEERING <br><br><span>SERVICES SDN BHD</span></div> 
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PAGEservices.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PAGEabout.html"> About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link " href="industry.html"> Industries</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PAGEportfolio.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Sub-header Title Banner -->
+  <div class="industry-page-title">
+    <div class="container">
+      <h1>Instrumentation Industry</h1>
+    </div>
+  </div>
+
+<!-- ==================== REDESIGN KANDUNGAN KOMERSIAL ==================== -->
+<div class="industry-redesign py-5">
+  <div class="container">
+
+    <!-- Hero Card: Utama -->
+    <div class="hero-service-card mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <span class="badge-tag">High-Purity Infrastructure Solutions</span>
+          <h2 class="section-heading-custom">Ducting for Various Research Equipment & Fume Exhaust</h2>
+          <p class="lead-text">
+            The laboratory gas piping industry is a critical sector that specializes in designing, manufacturing, and installing gas delivery systems for a wide range of laboratory and industrial applications. These systems are engineered to ensure the safe, precise, and reliable distribution of gases, such as high-purity gases, specialty gases, or hazardous materials, to support a variety of scientific processes and analytical equipment.
+          </p>
+          <p class="lead-text">
+            Laboratory gas piping solutions are tailored to the unique requirements of each facility, with considerations for gas types, pressure, flow rates, and safety measures. They play an integral role in maintaining the integrity and functionality of laboratory environments, directly impacting the accuracy and efficiency of research and manufacturing processes.
+          </p>
+          <p class="lead-text mb-0">
+            Additionally, these systems are compliant with strict regulatory standards to ensure the well-being of personnel and environmental protection. In essence, the laboratory gas piping industry is the cornerstone of gas delivery in laboratories and industrial settings, providing the critical infrastructure for scientific progress and precision manufacturing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Features 2 Column Cards -->
+    <div class="row my-5">
+      <!-- Card 1: Detection & Maintenance -->
+      <div class="col-lg-6 mb-4">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3 style="font-family: 'League Gothic', sans-serif; font-size: 32px; color: #003471;">We Detect the Problem</h3>
+          <p class="lead-text">
+            Maintenance in the laboratory gas piping industry is a proactive and essential practice that focuses on the detection of errors and the implementation of effective solutions. Regular maintenance routines are designed to identify potential issues before they escalate into costly and hazardous problems. Through meticulous inspection and testing, maintenance personnel can detect leaks, corrosion, pressure irregularities, or other system vulnerabilities.
+          </p>
+          <p class="lead-text mb-0">
+            Once issues are pinpointed, appropriate suggestions for corrective actions and improvements are provided. This includes repairing damaged components, replacing faulty valves, or upgrading the system to meet evolving safety and regulatory standards—ensuring maximum uptime and safety.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Strategic Focus -->
+      <div class="col-lg-6 mb-4">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <h3 style="font-family: 'League Gothic', sans-serif; font-size: 32px; color: #003471;">Our Service for Instrument Industry</h3>
+          <p class="lead-text">
+            Focusing our business on the instrument industry marks a strategic move towards specialization and expertise in a field that demands precision, innovation, and reliability. In this industry, we are dedicated to providing tailored solutions and services that cater specifically to the unique needs of clients who rely on intricate instruments for their research, testing, and manufacturing processes.
+          </p>
+          <p class="lead-text mb-0">
+            By honing our focus, we streamline our resources, deepen our technical knowledge, and develop cutting-edge solutions that directly enhance the performance, safety, and efficiency of your instruments—positioning us as your trusted engineering partner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Tailored Design (Biru Komersial) -->
+    <div class="solution-section">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+          <span style="color: #1AA260; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px;">Customized Systems</span>
+          <h2 style="font-family: 'League Gothic', sans-serif; font-size: 40px; color: #ffffff;" class="mt-1 mb-3">
+            We Design the Gas Piping for This Industry
+          </h2>
+          <p style="color: #e2e8f0; font-size: 15px; line-height: 1.8; text-align: justify;" class="mb-3">
+            Designing gas piping systems for the instrument industry is a highly specialized and client-centric process that begins with a thorough understanding of the client's specific needs and requirements. The first step is to engage in close consultation with the client to ascertain the types of gases, flow rates, pressure levels, and safety considerations for their instruments and applications.
+          </p>
+          <p style="color: #e2e8f0; font-size: 15px; line-height: 1.8; text-align: justify;" class="mb-0">
+            Once requirements are defined, the design process involves selecting appropriate materials—such as corrosion-resistant tubing, fittings, and valves—and creating a layout that optimizes efficiency while ensuring safety. This guarantees seamless integration with client instruments, allowing for future scalability and long-term operational success.
+          </p>
+        </div>
+        <div class="col-lg-5 col-md-12 text-center">
+          <div class="img-frame">
+            <img src="images/tools.png" alt="Engineering Tools and Design">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner Call To Action (Komersial) -->
+    <div class="cta-banner d-flex flex-column flex-md-row align-items-center justify-content-between mt-5">
+      <div>
+        <h3 style="color: #003471; font-weight: 700; margin-bottom: 5px;">Need Engineering Consultation for Your Instruments?</h3>
+        <p style="color: #64748b; margin-bottom: 0;">Our specialists are ready to inspect, design, and optimize your gas piping infrastructure.</p>
+      </div>
+      <div class="mt-3 mt-md-0">
+        <a href="PHPcontact.php" class="btn-custom-action">
+          <i class="fa fa-paper-plane"></i> Contact Our Engineers
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ==================== TAMAT KANDUNGAN KOMERSIAL ==================== -->
+
+<!-- Info Footer Section -->
+<footer class="info_section">
+  <div class="container py-5">
+    
+    <!-- Top Branding Header -->
+    <div class="row pb-4 mb-4 align-items-center border-bottom border-secondary">
+      <div class="col-md-6">
+        <a class="footer-brand" href="index.html">
+          TNZ <span>Engineering Services</span>
+        </a>
+      </div>
+      <div class="col-md-6 text-md-right mt-3 mt-md-0">
+        <a href="https://wa.me/+60133042070" target="_blank" class="btn btn-outline-light rounded-pill px-4">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="row">
+      
+      <!-- Col 1: Useful Links -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="footer-title">Useful Links</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li><a href="PAGEabout.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+          <li><a href="PAGEservices.html"><i class="fa fa-angle-right"></i> Services</a></li>
+          <li><a href="PAGEportfolio.html"><i class="fa fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="contact.php"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Services Brief -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="footer-title">Our Service</h5>
+        <p class="footer-text">
+          Specialized solutions to ensure the safe, precise, and efficient delivery of high-purity gases essential for scientific experiments and industrial processes.
+        </p>
+      </div>
+
+      <!-- Col 3: Address -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="footer-title">Address</h5>
+        <p class="footer-text">
+          <strong>TNZ Engineering Services Sdn. Bhd.</strong><br>
+          No. 4, Jalan ST/1,<br>
+          Taman Industri Sungai Tangkas,<br>
+          43000 Kajang, Selangor.
+        </p>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="footer-title">Contact Us</h5>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fa fa-globe"></i>
+            <a href="https://tnz.com.my" target="_blank">tnz.com.my</a>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+60389221151">603-8922 1151</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:sales@tnz.com.my">sales@tnz.com.my</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <a href="https://www.google.com/maps/place/TNZ+Engineering+Services+Sdn.+Bhd./@2.9458429,101.7835392,17z/data=!3m1!4b1!4m6!3m5!1s0x31cdc95a83aed0f3:0x9f319731a90759a1!8m2!3d2.9458429!4d101.7861141!16s%2Fg%2F11c1wvsh93?entry=ttu" target="_blank">Locate Our Centre</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&amp;callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+</html>

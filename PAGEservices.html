@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site Metas -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>TNZ ENGINEERING SERVICES</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous">
+  <!-- Animated icon awesome style -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+   <!--!--Icon-->
+  <!--https://icons8.com/icons/set/website--white-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+  <style>
+    :root {
+      --tnz-blue: #003366;
+      --tnz-green: #00B050;
+      --tnz-light-bg: #f8f9fa;
+      --tnz-dark-text: #2c3e50;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--tnz-dark-text);
+    }
+
+    /* Improved Service Cards Design */
+    .service_section {
+      background-color: var(--tnz-light-bg);
+      padding: 70px 0;
+    }
+    .service-card-link {
+      text-decoration: none !important;
+      color: inherit !important;
+      display: block;
+      height: 100%;
+    }
+    .service-card {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #eef2f5;
+      padding: 35px 25px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--tnz-green);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 51, 102, 0.12);
+    }
+    .service-card:hover::before {
+      opacity: 1;
+    }
+    .service-icon-box {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(0, 176, 80, 0.08);
+      transition: background 0.3s ease;
+    }
+    .service-card:hover .service-icon-box {
+      background: rgba(0, 51, 102, 0.08);
+    }
+    .service-card h5 {
+      font-weight: 600;
+      color: var(--tnz-blue);
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .service-card p {
+      color: #666;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      text-align: justify;
+      flex-grow: 1;
+    }
+    .service-learn-more {
+      color: var(--tnz-green);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.2s ease, color 0.2s ease;
+    }
+    .service-card:hover .service-learn-more {
+      gap: 12px;
+      color: var(--tnz-blue);
+    }
+
+    /* Key Trust Stats Bar */
+    .stats-bar {
+      background: var(--tnz-blue);
+      color: white;
+      padding: 40px 0;
+    }
+    .stat-item h3 {
+      font-weight: 700;
+      color: var(--tnz-green);
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+    .stat-item p {
+      font-size: 0.95rem;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* Call To Action Banner */
+    .cta-banner {
+      background: linear-gradient(rgba(0, 51, 102, 0.92), rgba(0, 51, 102, 0.92)), url('images/gallery/Pipping/pipping(1).jpeg') center/cover;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .cta-banner h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .btn-quote {
+      background-color: var(--tnz-green);
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 12px 30px !important;
+      box-shadow: 0 4px 10px rgba(0, 176, 80, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-block;
+      text-decoration: none !important;
+    }
+    .btn-quote:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 176, 80, 0.4);
+      background-color: #009644;
+    }
+
+    /* my banner */
+    /* Page Hero Banner */
+.page-header-banner {
+  background: linear-gradient(135deg, #002244 0%, #003366 100%);
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: left;
+}
+
+.page-header-banner h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.page-header-banner h1 span {
+  color: #00B050; /* Primary TNZ Green */
+}
+
+.page-header-banner p {
+  color: #b0c4de;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+    
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- -------------------------header section------------------- -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+          <!-- Container Utama (Guna Flexbox) -->
+          <div style="display: flex; align-items: center; background-color: #003366; padding: 10px;">
+            <!-- 1. Logo kat sebelah kiri -->
+            <img src="images/TNZLogo.png" alt="TNZ Logo" style="height: 60px; margin-right: 15px;">
+            <!-- 2. Teks kat sebelah kanan -->
+            <div style="display: flex; flex-direction: column;">
+              <span style="color: white; font-weight: bold; font-size: 20px; line-height: 1.2;">
+                TNZ ENGINEERING
+              </span>
+              <span style="color: #00B050; font-weight: bold; font-size: 18px; line-height: 1.2;">
+                SERVICES SDN BHD
+              </span>
+            </div>
+          </div> 
+          
+          <div class="contact_nav">
+            <a>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                603-8922 1151
+              </span>
+            </a>
+            <a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                sales@tnz.com.my
+              </span>
+            </a>
+            <a href="https://www.tnz.com.my/" target="_blank">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <span>www.tnz.com.my</span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/tnzengineeringservices/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/explore/locations/752944271532510/tnz-engineering-services-sdn-bhd/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <div class="mobile">
+              <a class="navbar-brand navbar_brand_mobile" href="index.html">
+                <img src="images/TNZLogo.png" style="width:80px; height:40px;">
+                <div class="name">TNZ ENGINEERING <br><br><span>SERVICES SDN BHD</span></div>
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="PAGEservices.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PAGEabout.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PAGEportfolio.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- -------------------------end header section------------------- -->
+<!-- HERO BANNER -->
+<section class="page-header-banner">
+  <div class="container">
+    <h1>Our <span>Services</span></h1>
+    <p>Specialized High-Purity Gas & Engineering Solutions</p>
+  </div>
+</section>
+  <!-- -------------------------service section------------------- -->
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="row">
+
+        <!-- Service 1 -->
+        <div class="col-sm-6 col-md-4 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEinstall.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/pipe.gif" style="width:100px; transform: scale(1.3); transform-origin: center;" alt="Special Gas Piping Installations">
+              </div>
+              <h5>Special Gas Piping Installations</h5>
+              <p>
+                With a highly trained team of experienced contact engineers and estimators, we offer the complete package—from design through to final testing and commissioning, including consulting services for new projects and constructions.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div> 
+
+        <!-- Service 2 -->
+        <div class="col-sm-6 col-md-4 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEworktop.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/project.gif" style="width:100px; transform: scale(1.3); transform-origin: center;" alt="Ducting Exhaust Systems">
+              </div>
+              <h5>Ducting for Various Research Equipment Fume Exhaust</h5>
+              <p>
+                We offer customized ducting systems to ensure long-lasting service, easy operation, easy handling, simple installation, maintenance, and servicing.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+        <!-- Service 3 -->
+        <div class="col-sm-6 col-md-4 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEdetection.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/gas.gif" style="width:100px; transform: scale(1.3); transform-origin: center;" alt="Gas Detection System">
+              </div>
+              <h5>Gas Detection System</h5>
+              <p>
+                Detectors and sensors are available in various types, styles, and sensitivity ranges. They are designed for detecting toxic, corrosive, and flammable gases, as well as monitoring oxygen deficiency.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        <!-- Service 4 -->
+        <div class="col-sm-6 col-md-4 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEmaintanance.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/maintenance.gif" style="width:100px; transform: scale(1.3); transform-origin: center;" alt="Special Gas Piping Maintenance">
+              </div>
+              <h5>Special Gas Piping Maintenances</h5>
+              <p>
+                With over 20 years of experience, we maintain, service, and repair your systems. Maintenance contracts are tailored to your requirements to prevent faults and ensure optimal system operation.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+        <!-- Service 5 -->
+        <div class="col-sm-6 col-md-4 mb-4 d-flex align-items-stretch">
+          <a href="SERVICEcustomCabinet.html" class="service-card-link w-100">
+            <div class="service-card" title="Click to view details">
+              <div class="service-icon-box">
+                <img src="gif/cabinet.gif" style="width:100px; transform: scale(1.3); transform-origin: center;" alt="Custom Laboratory Furniture">
+              </div>
+              <h5>Custom Made Laboratory Bench & Cabinet</h5>
+              <p>
+                We offer a wide selection of lab benches, base cabinets, acid/flammable storage cabinets, and phenolic resin worktops manufactured to offer unmatched quality and durability.
+              </p>
+              <div class="service-learn-more">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------end service section------------------- -->
+
+  <!-- TRUST STATS STRIP -->
+  <section class="stats-bar text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0 stat-item">
+          <h3>20+ Years</h3>
+          <p>Industry Leadership & Experience</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0 stat-item">
+          <h3>500+</h3>
+          <p>Successful Projects Installed</p>
+        </div>
+        <div class="col-md-4 stat-item">
+          <h3>100%</h3>
+          <p>Safety & Quality Compliance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h3>Need Expert Engineering Consultation?</h3>
+      <p class="mb-4">Get in touch with our certified engineers to discuss custom gas system requirements and quotes.</p>
+      <a href="PHPcontact.php" class="btn btn-quote">Request a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Info Footer Section -->
+  <footer class="info_section">
+    <div class="container py-5">
+      <!-- Top Branding Header -->
+      <div class="row pb-4 mb-4 align-items-center border-bottom border-secondary">
+        <div class="col-md-6">
+          <a class="footer-brand" href="index.html">
+            TNZ <span>Engineering Services</span>
+          </a>
+        </div>
+        <div class="col-md-6 text-md-right mt-3 mt-md-0">
+          <a href="https://wa.me/+60133042070" target="_blank" class="btn btn-outline-light rounded-pill px-4">
+            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="row">
+        <!-- Col 1: Useful Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href="PAGEabout.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+            <li><a href="PAGEservices.html"><i class="fa fa-angle-right"></i> Services</a></li>
+            <li><a href="PAGEportfolio.html"><i class="fa fa-angle-right"></i> Portfolio</a></li>
+            <li><a href="PHPcontact.php"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Services Brief -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Our Service</h5>
+          <p class="footer-text">
+            Specialized solutions to ensure the safe, precise, and efficient delivery of high-purity gases essential for scientific experiments and industrial processes.
+          </p>
+        </div>
+
+        <!-- Col 3: Address -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Address</h5>
+          <p class="footer-text">
+            <strong>TNZ Engineering Services Sdn. Bhd.</strong><br>
+            No. 4, Jalan ST/1,<br>
+            Taman Industri Sungai Tangkas,<br>
+            43000 Kajang, Selangor.
+          </p>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact list-unstyled">
+            <li>
+              <i class="fa fa-globe"></i>
+              <a href="https://tnz.com.my" target="_blank">tnz.com.my</a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <a href="tel:+60389221151">603-8922 1151</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:sales@tnz.com.my">sales@tnz.com.my</a>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <a href="https://www.google.com/maps/place/TNZ+Engineering+Services+Sdn.+Bhd./@2.9458429,101.7835392,17z/data=!3m1!4b1!4m6!3m5!1s0x31cdc95a83aed0f3:0x9f319731a90759a1!8m2!3d2.9458429!4d101.7861141!16s%2Fg%2F11c1wvsh93?entry=ttu" target="_blank">Locate Our Centre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section -->
+  <footer class="footer-bottom text-center py-3">
+    <div class="container">
+      <p class="m-0 small">
+        &copy; <span id="displayYear"></span> TNZ Engineering Services Sdn.Bhd. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+  <script>
+    document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
