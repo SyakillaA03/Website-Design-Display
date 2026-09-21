@@ -788,10 +788,12 @@ body {
   .carousel-inner,
   .carousel-item {
     position: relative !important;
+    height: auto !important;
+    min-height:auto ! important;
     top: auto !important;
   }
 
- /* Make the slider more fit to the sceen
+  Make the slider more fit to the sceen
   .slider_section {
     min-height: auto !important;
     height: auto !important;
@@ -799,13 +801,17 @@ body {
     padding-bottom: 50px !important;
   }
 
-  */
-
 
 .hero_area {
   position: relative;
   height: calc(110vh - 35px);
 }
+
+   /* Hide Stats Bar*/
+  .stats_bar,
+  .key_highlights_section { 
+    display: none !important;
+  }
 
 /* About Section display in row */
   .about_section .row {
