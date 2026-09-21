@@ -40,7 +40,7 @@
 
   
 
-  <!-- Modern Styling Overrides maintaining original palette (#2B547E) -->
+    <!-- Modern Styling Overrides maintaining original palette (#2B547E) -->
   <style>
    :root {
   --primary-blue: #2B547E;
@@ -744,8 +744,24 @@ body {
   }
 } 
 
+
 /* 2. SKRIN TABLET & PERANTI MEDIUM (max-width: 768px) */
 @media screen and (max-width: 768px) {
+
+  /* Kurangkan margin negatif supaya kad biru tidak terpotong ke atas */
+  .stats_bar {
+    margin-top: -180px; /* Sebelum ini -145px / -200px */
+    position: relative;
+    z-index: 10;
+    width: 92% !important; /* Luaskan sikit supaya tidak terlalu sempit */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Beri sedikit ruang tambahan di bawah slider supaya kad biru tak rapat sangat dengan bahagian bawah */
+  .slider_section {
+    padding-bottom: 60px !important;
+  }
   .slider_section .detail-box {
     display: flex;
     flex-direction: column;
@@ -804,6 +820,38 @@ body {
 
 /* 4. SKRIN TELEFON STANDARD (max-width: 480px) */
 @media screen and (max-width: 480px) {
+
+  .slider_section {
+    padding-top: 80px !important;
+    padding-bottom: 40px !important;
+    min-height: auto !important;
+  }
+
+  /* Hapus margin negatif stats_bar yang menyebabkan overlap */
+  .stats_bar {
+    margin-top: -150px;
+    position: relative !important;
+    z-index: 2;
+  }
+
+  /* Susun tombol Explore & Get Quote secara vertikal dengan rapi */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  .btn-primary-custom, 
+  .btn-outline-custom, 
+  .btn-primary-custom-V2 {
+    width: 100% !important;
+    max-width: 280px;
+    margin: 0 !important;
+    text-align: center;
+  }
   /* Hero Buttons Layout */
   .hero-buttons {
     display: flex !important;
