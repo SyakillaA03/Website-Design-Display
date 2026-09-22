@@ -1785,13 +1785,8 @@ span.text2{
     .stats_bar{
       margin-top: -180px;
     }
-    
-    .about_section{
-     background-color:yellow!important;
-   }
 
-
-      }
+	  }
 
 @media screen and (max-width: 1000px) {
 
@@ -1810,10 +1805,9 @@ span.text2{
   .stat_item h3 {
     font-size: 1.3rem;
   }
- .about_section{
-     background-color:orange!important;
-   }
-} 
+}
+ 
+
 
 @media screen and (max-width:991px){
 
@@ -1886,10 +1880,6 @@ span.text2{
     margin-top: -150px !important;
   }
 
-  .about_section{
-    background-color:pink!important;
-  }
-
   
   
 }
@@ -1944,10 +1934,8 @@ span.text2{
   .about_section{
     padding-top:120px;
   }
- .about_section{
-     background-color:red!important;
-   }
 }
+ 
 
 @media screen and (max-width: 576px) {
 
@@ -2011,9 +1999,7 @@ span.text2{
     margin: 0 !important;
     text-align: center;
   }
- .about_section{
-     background-color:purple!important;
-   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2330,9 +2316,6 @@ span.text2{
     margin-top: 50px;
   }
 
-   .about_section{
-     background-color:green!important;
-   }
 }
 
 @media screen and (max-width: 300px) {
@@ -2371,10 +2354,9 @@ span.text2{
   .stat_item p {
     font-size: 0.55rem !important;
   }
-   .about_section{
-     background-color:pink!important;
-   }
+
 }
+
 
 
 	
