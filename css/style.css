@@ -1771,8 +1771,6 @@ span.text2{
       margin-top: -180px;
     }
     
-    .about_section{
-     background-color:green!important;
    }
 
       @media screen and (max-width: 1200px){
@@ -1858,10 +1856,6 @@ span.text2{
     margin-bottom: 2rem !important;
   }
 
-  .about_section {
-    background-color:blue!important;
-
-}
 
 /* about page*/ 
  div.about-card p {
@@ -2239,9 +2233,6 @@ span.text2{
   .partner-card .heading_container.heading_center h2 {
     font-size: 20px !important;
   }
-   .about_section{
-     background-color:orange!important;
-   }
 
      /*About pages*/
    .commercial-hero .container h1{
