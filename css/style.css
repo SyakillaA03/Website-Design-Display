@@ -1910,14 +1910,27 @@ span.text2{
     width: 100% !important; 
   }
 
-  .hero-buttons {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 30px !important;
-    width: 100% !important;
-    padding: 0 15px;
-    margin-top: 15px;
-  }
+/* Memperbaiki lebar kontainer pembungkus inline style */
+.detail-box > div[style*="width:fit-content"] {
+  width: 100% !important;
+}
+
+/* Pengaturan layout tombol */
+.hero-buttons {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+
+/* Mengubah elemen link menjadi block agar gap flexbox berfungsi sempurna */
+.hero-buttons a {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
 
   .btn-primary-custom, .btn-outline-custom {
     width: 100% !important;
