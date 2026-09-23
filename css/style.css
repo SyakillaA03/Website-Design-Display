@@ -1801,7 +1801,7 @@ span.text2{
 
      .hero_area{
        position:relative;
-       height: calc(160vh - 45px);
+       height: calc(100vh - 45px);
      }
 
     .stats_bar{
