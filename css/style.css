@@ -1843,6 +1843,11 @@ span.text2{
 
 @media screen and (max-width:991px){
 
+	  .about_section{
+      padding-top:70px;
+    }
+
+
  .about_section{
 	 background-color: green!important;
  }
