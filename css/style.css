@@ -1774,8 +1774,16 @@ span.text2{
        height: calc(140vh - 45px);
      }
 
-    .stats_bar{
-      margin-top: -200px;
+	   .stats_bar {
+      margin-top: -200px !important; /* Nilai negatif ini menarik kotak ke atas */
+      position: relative !important;
+      z-index: 10 !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .about_section{
+      padding-top:120px;
     }
 
     
