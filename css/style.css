@@ -1765,10 +1765,6 @@ span.text2{
 
    @media screen and (max-width: 1400px){
 
-	   .about_section{
-		   background-color: blue!important; 
-	   }
-
      .hero_area{
        position:relative;
        height: calc(130vh - 45px);
@@ -1795,10 +1791,6 @@ span.text2{
 
       @media screen and (max-width: 1200px){
 
-		  .about_section{
-		   background-color: pink!important; 
-	   }  
-
      .hero_area{
        position:relative;
        height: calc(130vh - 45px);
@@ -1816,10 +1808,7 @@ span.text2{
 
 @media screen and (max-width: 1000px) {
 
-   .about_section{
-	   background-color: yellow!important;
-   }
-	
+   
    .hero_area{
        height: calc(140vh - 45px);
      }
@@ -1846,11 +1835,6 @@ span.text2{
 	  .about_section{
       padding-top:70px;
     }
-
-
- .about_section{
-	 background-color: green!important;
- }
 
   .hero_area,
   .slider_section,
@@ -1917,9 +1901,6 @@ span.text2{
 
 @media screen and (max-width:850px){
 
-	 .about_section{
-	 background-color: orange!important;
- }
 
   .stats_bar {
     margin-top: -150px !important;
@@ -1938,12 +1919,7 @@ span.text2{
 	  .about_section{
       padding-top:30px;
     }
-
-
-	 .about_section{
-	 background-color: red!important;
- }
-
+	
      .hero_area{
        position:relative;
        height: calc(180vh - 35px);
@@ -2017,12 +1993,7 @@ span.text2{
 	.about_section{
       padding-top:30px;
     }
-
-
-	 .about_section{
-	 background-color: green!important;
- }
-
+	
   .hero_area,
   .slider_section,
   .carousel-inner,
@@ -2092,11 +2063,7 @@ span.text2{
 
 @media screen and (max-width: 480px) {
 
-	 .about_section{
-	 background-color: yellow!important;
- }
-
-  .slider_section {
+	  .slider_section {
     padding-top: 80px !important;
     padding-bottom: 40px !important;
     min-height: auto !important;
@@ -2396,9 +2363,7 @@ span.text2{
    ========================================================================== */
 
 @media screen and (max-width: 380px) {
-	 .about_section{
-	 background-color: pink!important;
- }
+	 
   
   .stat_item h3 {
     font-size: 1.0rem;
@@ -2420,9 +2385,7 @@ span.text2{
 
 @media screen and (max-width: 300px) {
 	
-	 .about_section{
-	 background-color: red!important;
- }
+	
   .slider_section h1 {
     font-size: 1.3rem !important;
     line-height: 1.2 !important;
