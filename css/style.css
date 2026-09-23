@@ -1936,7 +1936,7 @@ span.text2{
 @media screen and (max-width: 768px) {
 
 	  .about_section{
-      padding-top:50px;
+      padding-top:30px;
     }
 
 
@@ -2013,6 +2013,11 @@ span.text2{
    ========================================================================== */
 
 @media screen and (max-width: 576px) {
+
+	.about_section{
+      padding-top:30px;
+    }
+
 
 	 .about_section{
 	 background-color: green!important;
