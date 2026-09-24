@@ -1771,7 +1771,7 @@ span.text2{
      }
 
 	   .stats_bar {
-      margin-top: -200px !important; /* Nilai negatif ini menarik kotak ke atas */
+      margin-top: -200px !important; /* it move the section up*/
       position: relative !important;
       z-index: 10 !important;
       margin-left: auto !important;
@@ -1884,14 +1884,14 @@ span.text2{
   }
 
 
-/* about page*/ 
- div.about-card p {
-  text-align: justify;
-    } 
-    
- div.vm-card p{
-  text-align: justify;
- }
+	/* about page*/ 
+	 div.about-card p {
+	  text-align: justify;
+	    } 
+	    
+	 div.vm-card p{
+	  text-align: justify;
+	 }
 
 }
 
@@ -1901,12 +1901,9 @@ span.text2{
 
 @media screen and (max-width:850px){
 
-
   .stats_bar {
     margin-top: -150px !important;
-  }
-
-  
+  } 
   
 }
 
@@ -1916,7 +1913,7 @@ span.text2{
 
 @media screen and (max-width: 768px) {
 
-	  .about_section{
+	.about_section{
       padding-top:30px;
     }
 	
@@ -1950,12 +1947,12 @@ span.text2{
     width: 100% !important; 
   }
 
-/* Memperbaiki lebar kontainer pembungkus inline style */
+/* it recover the width of container  */
 .detail-box > div[style*="width:fit-content"] {
   width: 100% !important;
 }
 
-/* Pengaturan layout tombol */
+/* layout for button*/
 .hero-buttons {
   display: flex !important;
   flex-direction: column !important;
@@ -1965,7 +1962,7 @@ span.text2{
   margin-top: 15px;
 }
 
-/* Mengubah elemen link menjadi block agar gap flexbox berfungsi sempurna */
+/* it change element link to block so the gap of the flexbox functioning well */
 .hero-buttons a {
   display: block !important;
   width: 100% !important;
