@@ -2299,7 +2299,9 @@ span.text2{
     font-size: 20px !important;
   }
 
-     /*About pages*/
+   
+  /****************************** About Page Section *****************************/
+
    .commercial-hero .container h1{
     font-size:25px;
    }
@@ -2354,6 +2356,299 @@ span.text2{
       text-align: justify!important;
     }
 
+    /****************************** Service Page *****************************/
+    .page-header-banner .container{
+     padding-left:30px;
+    }
+    .page-header-banner .container h1{
+      font-size:25px;
+     }
+
+     .page-header-banner .container p{
+      font-size: 12px;
+     }
+
+     .service-card h5{
+      font-size: 20px!important;
+     }
+
+     .service-card p{
+      font-size:12px!important;
+     }
+
+     .service-icon-box img{
+      transform: scale(0.8)!important;
+     }
+     
+
+     .stats-bar .container .col-md-4 h3{
+      font-size: 25px!important;
+     }
+
+     .cta-banner .container h3{
+      font-size: 25px!important;
+     }
+
+     .cta-banner .container p{
+      font-size: 12px!important;
+     }
+
+     .btn.btn-quote{
+      font-size:12px;
+
+     }
+
+     /****************************** Portfolio Page Section *****************************/
+      .page-header-banner .container h1{
+        font-size:25px!important;
+      }
+
+      .page-header-banner .container p{
+        font-size:12px!important;
+      }
+
+      .owl-filter-bar a{
+        font-size:10px!important;
+      }
+
+      .top_projects_section .container .heading_container h2{
+        font-size:25px!important;
+      }
+
+      
+      .top_projects_section .section-subtitle {
+        font-size: 12px !important;
+      }
+
+      .project-card .project-badge{
+        font-size:15px!important;
+      }
+
+      .project-card .project-title{
+        font-size: 12px!important;
+      }
+
+
+     /****************************** Contact US Page Section *****************************/
+      .contact_page_wrapper .container h2{
+        font-size:25px!important;
+      }
+
+      .contact_page_wrapper .container p{
+        font-size:12px;
+      }
+     
+     /* Main title Contact Information */
+    .contact_info_side h3 {
+      font-size: 22px !important;
+    }
+
+    /* Sub-teks below h3 */
+    .contact_info_side .sub_text {
+      font-size: 13px !important;
+      margin-bottom: 20px;
+    }
+
+    /* Small title each item (Company Name, Phone, dll) */
+    .contact_info_side .info_item h6 {
+      font-size: 14px !important;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    /* the content inside the item  (TNZ Engineering..., Alamat, Email) */
+    .contact_info_side .info_item p {
+      font-size: 13px !important;
+    }
+
+    /* reduce the distance at whataaos button */
+      .contact_info_side .mt-4 {
+        margin-top: 15px !important; /* before mt-4 (~1.5rem / 24px) */
+      }
+
+      /* reduce the distance for each .info_item */
+      .contact_info_side .info_item {
+        margin-bottom: 12px !important; /* Pelaras jika jarak antar item pun nak dirapatkan */
+      }
+
+          /*for all pages layout make it more organize navbar*/
+        .custom_nav-container {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+        /*name of the company in phone setup */
+        .navbar_brand_mobile .name {
+          font-size: 11px !important;
+          line-height: 1.1 !important;
+        }
+
+        /* smaller so the registration number more organize */
+        .navbar_brand_mobile .name span:last-child {
+          font-size: 8.5px !important;
+          opacity: 0.8;
+        }
+
+        
+     /****************************** Industry Page Section *****************************/
+    .industry-page-title .container h1{
+      font-size:25px;
+    }
+
+    .badge-tag{
+    font-size:15px!important;
+      
+    }
+    .col-lg-12 h2{
+      font-size:20px;
+    }
+
+    .col-lg-12 p{
+      font-size:12px;
+    }
+
+    .feature-card h3{
+      font-size:25px!important;
+    }
+
+    .feature-card p{
+      font-size:12px;
+    }
+
+    .col-lg-7 p{
+      font-size:12px !important;
+    }
+
+    .col-lg-7 h2{
+      font-size:25px !important;
+    }
+    
+    .cta-banner h3{
+      font-size:25px!important;
+    }
+
+    .cta-banner p{
+      font-size:12px !important;
+    }
+
+     /****************************** Service Install Page *****************************/
+      .commercial-content-padding h2{
+        font-size:20px!important;
+       text-align: left;
+      }
+
+      .commercial-content-padding p{
+        font-size:12px!important;
+      }
+
+      .col-lg-6.p-5 h2, .feature-grid-box h3{
+        font-size: 20px!important;
+
+      }
+
+      .col-lg-6.p-5 p, .feature-grid-box p{
+        font-size:12px!important;
+      }
+
+    
+      .cta-banner-commercial h3 {
+        font-size: 20px !important;
+      }
+
+    
+      .cta-banner-commercial p {
+        font-size: 12px !important;
+      }
+
+    
+      .btn-commercial-whatsapp,
+      .btn-commercial-whatsapp i {
+        font-size: 15px !important;
+      }
+
+
+
+
+     /****************************** Service Worktop Page *****************************/
+      .service-card-body h1{
+        font-size:20px!important;
+      }
+
+      .col-lg-8 h2{
+        font-size:20px!important;
+
+      }
+
+      .col-lg-8 p{
+        font-size:12px!important;
+      }
+
+      .mb-3 h4{
+        font-size:25px!important;
+      }
+
+      .mb3 p{
+        font-size:12px!important;
+      }
+
+
+
+
+
+     /****************************** Service Detection Page *****************************/
+      .col-lg-7 .detection-title{
+        font-size: 20px!important;
+      }
+
+
+     /****************************** Service Maintainance Page *****************************/
+      .col-md-8 h2{
+        font-size:20px!important;
+      }
+
+      .col-md-8 p{
+        font-size:12px!important;
+      }
+
+
+
+     /****************************** Service Custom Cabinet Page *****************************/
+      .col-lg-7 .section-title-custom {
+        font-size:20px!important;
+      }
+
+      .text-content-p, .highlight-box{
+        font-size:12px!important;
+        text-align: justify;
+      }
+
+      
+     /****************************** Zeochem section Page *****************************/
+     .col-lg-8 h1{
+      font-size:20px!important;
+     }
+
+     .col-lg-8 p{
+      font-size:12px!important;
+      text-align: justify;
+     }
+
+     .zeo_logo_card img{
+      max-width: 200px!important;
+     }
+
+     .section_heading span{
+      font-size: 20px!important;
+     }
+
+     .interactive_card p{
+      font-size:12px!important;
+      text-align: justify;
+     }
+
+
+     
+     /****************************** Products Page *****************************/
 
 
 }
