@@ -126,8 +126,8 @@ body {
   background-position: center;
   min-height: 68vh;
   display: flex;
-  align-items: flex-start; /* membantu membuatkan teks ke bahagian atas */
-  padding-top: 50px;       /* Jarak dari navbar - tingkatkan jika nak lebih jauh jaraknya */
+  align-items: flex-start; /* help to make the text move up*/
+  padding-top: 50px;       /* the distance from navbar - increase if want the distare more far*/
   color: #fff;
 }
 
@@ -735,11 +735,11 @@ body {
   <header class="header_section">
     <div class="header_top">
       <div class="container-fluid header_top_container">
-        <!-- Container Utama (Guna Flexbox) -->
+        <!-- Container main -->
         <div style="display: flex; align-items: center; background-color: #003366; padding: 10px;">
-          <!-- 1. Logo kat sebelah kiri -->
+          <!-- 1. Logo at the left -->
           <img src="images/TNZLogo.png" alt="TNZ Logo" style="height: 60px; margin-right: 15px;">
-          <!-- 2. Teks kat sebelah kanan -->
+          <!-- 2. Text at the right-->
           <div style="display: flex; flex-direction: column;">
             <span style="color: white; font-weight: bold; font-size: 20px; line-height: 1.2;">
               TNZ ENGINEERING
@@ -789,7 +789,7 @@ body {
             <span class="fa fa-bars" style="color:white;"></span>
           </button>
 
-         <!-- 3. MENU NAVIGASI (Bila klik button baru keluar menu ni) --> 
+         <!-- 3. MENU NAVIGASI when click button it will highlight the current page --> 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav ml-auto"> <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li> 
               <li class="nav-item"><a class="nav-link" href="PAGEservices.html">SERVICES</a></li>
@@ -994,7 +994,7 @@ body {
   <div class="container">
     <div class="row align-items-center flex-column-reverse flex-md-row">
       
-      <!-- Teks & Maklumat -->
+      <!-- text and information section -->
       <div class="col-lg-6 col-md-6 mt-4 mt-md-0">
         <div class="heading_container mb-3">
           <h2>Authorized <span>Distributor of</span> ZEOCHEM</h2>
@@ -1029,7 +1029,7 @@ body {
         </a>
       </div>
 
-      <!-- Gambar Interaktif -->
+      <!-- interactive image -->
       <div class="col-lg-6 col-md-6">
         <div class="img-container-interactive">
           <div class="img-box shadow-lg">
@@ -1505,10 +1505,10 @@ body {
 
   
 
-<!-- Pastikan jQuery dan Owl Carousel JS telah dimuatkan terlebih dahulu -->
+<!-- Make sure jQuery dan Owl Carousel JS being add first-->
 <script>
 $(document).ready(function () {
-  // 1. Inisialisasi Owl Carousel Utama
+  // 1. main owl
   var $owl = $('.portfolio_carousel').owlCarousel({
     loop: false,
     margin: 15,
@@ -1521,33 +1521,33 @@ $(document).ready(function () {
     }
   });
 
-  /* Simpan klon item asal untuk proses penapisan */
+  /* Store the clone of the original item for the filtering process */
   var $owlItems = $('.portfolio_carousel .item').clone();
 
-  // 2. Fungsi Penapisan (Filter) & Pertukaran Class Active
+  // 2. Filter function anf change of the active class
   $('.owl-filter-bar').on('click', '.item-filter', function (e) {
     e.preventDefault();
 
-    // Penukaran Visual Status Active pada Butang
+    // change the visual status active at the button
     $('.owl-filter-bar .item-filter').removeClass('active');
     $(this).addClass('active');
 
     var filterValue = $(this).attr('data-owl-filter');
 
-    // Proses Menapis Item Carousel
-    $owl.trigger('destroy.owl.carousel'); // Musnahkan carousel sementara
+    //The process of filtering
+    $owl.trigger('destroy.owl.carousel'); // destroy current cursol
     $owl.empty(); // Kosongkan item semasa
 
     if (filterValue === '*') {
-      // Jika 'ALL', masukkan semula semua gambar
+      // when all chosen all image will beshown
       $owl.append($owlItems);
     } else {
-      // Masukkan gambar yang sepadan dengan class sahaja (cth: .pipping)
+      // display or add picture that match with the item filtered only like pipping
       var $filteredItems = $owlItems.filter(filterValue);
       $owl.append($filteredItems);
     }
 
-    // Bina semula Owl Carousel dengan item baru
+    // Build back owl with new item
     $owl.owlCarousel({
       loop: false,
       margin: 15,
