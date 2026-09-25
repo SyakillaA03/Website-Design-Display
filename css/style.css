@@ -1969,6 +1969,37 @@ span.text2{
   box-sizing: border-box !important;
 }
 
+	/* Container untuk index-ads-button */
+.index-ads-button {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14px !important; /* Jarak yang sama macam hero */
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Tetapan Butang di dalam index-ads-button */
+.index-ads-button .btn {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 44px !important;
+  padding: 10px 20px !important;
+  font-size: 15px !important; /* Font size sama macam hero */
+  font-weight: 700 !important;
+  border-radius: 30px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important; /* Buang sebarang margin bawaan */
+  transition: all 0.3s ease;
+}
+
+.index-ads-button .btn-light {
+  color: var(--primary-blue) !important;
+}
+
+
   .btn-primary-custom, .btn-outline-custom {
     width: 100% !important;
     margin-right: 0 !important;
@@ -2041,6 +2072,19 @@ span.text2{
     flex-direction: column !important;
     align-items: center !important;
     gap: 12px !important;
+  }
+
+	.index-ads-button {
+    flex-direction: column !important; /* Susun menegak bila di telefon */
+    gap: 12px !important;
+  }
+
+  .index-ads-button .btn {
+    width: 100% !important;
+    max-width: 280px !important; /* Lebar maksimum sama macam hero */
+    height: 44px !important;
+    font-size: 15px !important;
+    padding: 10px 20px !important;
   }
 
   .btn-primary-custom, 
