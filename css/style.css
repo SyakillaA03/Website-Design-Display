@@ -2296,18 +2296,24 @@ span.text2{
     margin-bottom: 1.5rem !important;
   }
 
+ /* 1. Paksa lajur Bootstrap untuk letak kandungan di tengah */
+  .service_section [class*="col-"] {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* 2. Kawal lebar kad & pastikan margin auto untuk center */
   .service_section .box {
-  width: 100% !important;        /* Isi penuh ruang lajur */
-  max-width: 100% !important;    /* Buang had max-width yang meletakkan saiz keras */
-  margin: 0 0 15px 0 !important; /* Kekalkan margin bawah sahaja */
-  padding: 20px 15px;
-  border-radius: 15px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+    width: 100% !important;
+    max-width: 260px !important; /* Boleh ubah saiz ini (cth: 250px-280px) ikut kesesuaian */
+    margin: 0 auto 18px auto !important; /* auto di kiri-kanan memaksa kad duduk tengah */
+    padding: 20px 15px !important;
+    border-radius: 15px !important;
+    box-sizing: border-box !important;
+  }
 
   .service_section .box img {
     width: 50px !important;
