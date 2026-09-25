@@ -1953,7 +1953,7 @@ span.text2{
 }
 
 /* layout for button*/
-.hero-buttons, .index-ads-button {
+.hero-buttons {
   display: flex !important;
   flex-direction: column !important;
   gap: 12px !important;
@@ -1963,7 +1963,7 @@ span.text2{
 }
 
 /* it change element link to block so the gap of the flexbox functioning well */
-.hero-buttons a, .index-ads-button a {
+.hero-buttons a {
   display: block !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -1975,23 +1975,23 @@ span.text2{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 14px !important; /* Jarak yang sama macam hero */
+  gap: 14px !important; /*same distance like hero button */
   width: 100%;
   margin-top: 20px;
 }
 
-/* Tetapan Butang di dalam index-ads-button */
+/* Setting the button inside ads index buttton */
 .index-ads-button .btn {
   display: inline-flex !important;
   justify-content: center !important;
   align-items: center !important;
   height: 44px !important;
   padding: 10px 20px !important;
-  font-size: 15px !important; /* Font size sama macam hero */
+  font-size: 15px !important; /* same font as hero slider */
   font-weight: 700 !important;
   border-radius: 30px !important;
   box-sizing: border-box !important;
-  margin: 0 !important; /* Buang sebarang margin bawaan */
+  margin: 0 !important; /* remove button margin */
   transition: all 0.3s ease;
 }
 
@@ -2075,13 +2075,13 @@ span.text2{
   }
 
 	.index-ads-button {
-    flex-direction: column !important; /* Susun menegak bila di telefon */
+    flex-direction: column !important; /* the organize become vertical for phone */
     gap: 12px !important;
   }
 
   .index-ads-button .btn {
     width: 100% !important;
-    max-width: 280px !important; /* Lebar maksimum sama macam hero */
+    max-width: 280px !important; /* width same as hero button */
     height: 44px !important;
     font-size: 15px !important;
     padding: 10px 20px !important;
@@ -2376,7 +2376,7 @@ span.text2{
     /* remove margin */
     section.py-5 .section-title {
       margin-top: 0 !important;
-      padding-top: 20px !important; /* Boleh laraskan jika nak ada sedikit ruang bernafas */
+      padding-top: 20px !important; 
     }
     
     div.vm-card p{
@@ -2508,7 +2508,7 @@ span.text2{
 
       /* reduce the distance for each .info_item */
       .contact_info_side .info_item {
-        margin-bottom: 12px !important; /* Pelaras jika jarak antar item pun nak dirapatkan */
+        margin-bottom: 12px !important; 
       }
 
           /*for all pages layout make it more organize navbar*/
