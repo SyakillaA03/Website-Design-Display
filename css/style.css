@@ -1757,7 +1757,7 @@ span.text2{
 
      .hero_area{
        position:relative;
-       height: calc(130vh - 45px);
+       height: calc(140vh - 45px);
      }
 
 	   .stats_bar {
@@ -1800,7 +1800,7 @@ span.text2{
 
    
    .hero_area{
-       height: calc(140vh - 45px);
+       height: calc(125vh - 45px);
      }
   .slider_section h1 {
     font-size: 2.0rem !important;
