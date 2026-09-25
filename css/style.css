@@ -1953,7 +1953,7 @@ span.text2{
 }
 
 /* layout for button*/
-.hero-buttons {
+.hero-buttons, .index-ads-button {
   display: flex !important;
   flex-direction: column !important;
   gap: 12px !important;
@@ -1963,7 +1963,7 @@ span.text2{
 }
 
 /* it change element link to block so the gap of the flexbox functioning well */
-.hero-buttons a {
+.hero-buttons a, .index-ads-button a {
   display: block !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -2036,7 +2036,7 @@ span.text2{
     margin-bottom: 20px !important;
   }
 
-  .hero-buttons {
+  .hero-buttons, .index-ads-button {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -2060,7 +2060,7 @@ span.text2{
 
 @media screen and (max-width: 480px) {
 
-	  .slider_section {
+ .slider_section {
     padding-top: 80px !important;
     padding-bottom: 40px !important;
     min-height: auto !important;
@@ -2074,7 +2074,7 @@ span.text2{
   }
 
   /* Organize the button Explore & Get Quote become vertical*/
-  .hero-buttons {
+  .hero-buttons, .index-ads-button {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -2125,7 +2125,6 @@ span.text2{
   .value_prop_section h2 {
     font-size: 20px;
   }
-
 
   .about_section p {
     font-size: 10px;
