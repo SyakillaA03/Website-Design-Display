@@ -1959,7 +1959,7 @@ span.text2{
   gap: 12px !important;
   width: 100% !important;
   padding: 0 15px;
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 /* it change element link to block so the gap of the flexbox functioning well */
