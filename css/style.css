@@ -149,7 +149,7 @@ a:focus {
 
 .hero_area {
   position: relative;
-  height: calc(120vh - 55px);
+  height: calc(110vh - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,6 @@ a:focus {
   background-color: transparent;
   color: #da7426;
 }
-
 
 
 .slider_section .carousel_btn-box {
